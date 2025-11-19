@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="./menu.css">
+    <script src="https://kit.fontawesome.com/16a2d7a5b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- overall -->
+    <section>
+
+        <!-- navbar -->
+        <nav>
+            <div class="nav_head">
+                <img src="./assest/logo1.png" alt="">
+                <h1 class="inter">MeaT</h1>
+            </div>
+            <div class="nav_add" onclick="map()">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pop">
+                    <h4>Address</h4>
+                    <p>velachery,vijay nagar busstop 600056</p>
+                </div>
+            </div>
+            <input type="radio" id="check">
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <div class="nav_menu pop">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#product">Product</a>
+                <a href="#service">Services</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact us</a>
+            </div>
+            <a href="./bill.html"><i class="fa-solid fa-cart-plus"></i></a>
+
+           <a href=""> <i class="fa-solid fa-circle-user"></i></a>
+        </nav>
+        <!-- home page -->
+        <div class="menu_home">
+            <div class="pop">
+                <h1>From Farm to Fork – 100% Fresh, Clean, and Tender Meats Delivered at Your Doorstep!</h1>
+                <a href="#list">Shop Now</a>
+            </div>
+            <img src="./assest/delivery_boy.png" alt="">
+        </div>
+
+        <div class="menu_list pop" id="list">
+
+            <!-- MEAT SECTION -->
+            <div class="list_meat">
+                <h1>MEAT</h1>
+                <h1 class="mt_left" onclick="scrollLeft1('meat_container')">&lt;</h1>
+                <div class="meat_container">
+
+                    <div class="meat_items">
+                        <img src="./assest/sec_chick.png" alt="">
+                        <h3>Chicken</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_goat.png" alt="">
+                        <h3>Goat</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_beef.png" alt="">
+                        <h3>Beef</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_pork.png" alt="">
+                        <h3>Pork</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_duck.png" alt="">
+                        <h3>Duck</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_goat.png" alt="">
+                        <h3>Goat</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_beef.png" alt="">
+                        <h3>Beef</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_pork.png" alt="">
+                        <h3>Pork</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_duck.png" alt="">
+                        <h3>Duck</h3>
+                    </div>
+
+                </div>
+                <h1 class="mt_right" onclick="scrollRight1('meat_container')">&gt;</h1>
+            </div>
+
+
+            <!-- SEAFOOD SECTION -->
+            <div class="list_seafood">
+                <h1>SEAFOOD</h1>
+                <h1 class="mt_left" onclick="scrollLeft1('sea_container')">&lt;</h1>
+                <div class="sea_container">
+
+                    <div class="meat_items">
+                        <img src="./assest/sec_fish.png" alt="">
+                        <h3>Fish</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_prawn.png" alt="">
+                        <h3>Prawns</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_crab.png" alt="">
+                        <h3>Crabs</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_oyters.png" alt="">
+                        <h3>Oysters</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_musesles.png" alt="">
+                        <h3>Mussels</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_fish.png" alt="">
+                        <h3>Fish</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_prawn.png" alt="">
+                        <h3>Prawns</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_crab.png" alt="">
+                        <h3>Crabs</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_oyters.png" alt="">
+                        <h3>Oysters</h3>
+                    </div>
+                    <div class="meat_items">
+                        <img src="./assest/sec_musesles.png" alt="">
+                        <h3>Mussels</h3>
+                    </div>
+
+                </div>
+                <h1 class="mt_right" onclick="scrollRight1('sea_container')">&gt;</h1>
+            </div>
+
+        </div>
+
+        <!-- chick menu -->
+        <div class="chick_menu">
+            <div class="chick_inside">
+                <img src="./assest/breast.png" alt="">
+                <h2>Breast chicken</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+                      <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                <button onclick="addToCart('./assest/breast.png',250,this)">Add to Cart</button>
+                
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+
+            <div class="chick_inside">
+                  <img src="./assest/drumstick.png" alt="">
+                <h2>Drumstick</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+                    <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                  <button onclick="addToCart('./assest/drumstick.png',250,this)">Add to Cart</button>
+                  
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+
+            <div class="chick_inside">
+                  <img src="./assest/wings.png" alt="">
+                <h2>Wings</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+                    <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                  <button onclick="addToCart('./assest/wings.png',350,this)">Add to Cart</button>
+                
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+
+            <div class="chick_inside">
+                  <img src="./assest/liver.png" alt="">
+                <h2>Liver</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+
+                     <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                  <button onclick="addToCart('./assest/liver.png',150,this)">Add to Cart</button>
+                
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+
+             <div class="chick_inside">
+                  <img src="./assest/grilled.png" alt="">
+                <h2>Grilled</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+                <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                  <button onclick="addToCart('./assest/grilled.png',300,this)">Add to Cart</button>
+
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+
+             <div class="chick_inside">
+                  <img src="./assest/heart.jpg" alt="">
+                <h2>Heart</h2>
+                <p>apple new pass developer statement
+hello people yellow person process of
+hello developer </p>
+  <h3><i class="fa-solid fa-minus minus" onclick="incr(this.nextElementSibling,'sub')"></i>  <span class="qty">0</span><i class="fa-solid fa-plus plus"  onclick="incr(this.previousElementSibling,'add')"></i></h3>
+                 <button onclick="addToCart('./assest/heart.png',200,this)">Add to Cart</button>
+              
+                <div class="lfbor_div"></div>
+                <div class="rgbor_div"></div>
+            </div>
+        </div>
+
+
+
+            <!-- footer -->
+     <footer class="inter">
+        <div class="foot_one"><img src="./assest/logo1.png" alt="">
+        <h1>MeaT</h1></div>
+        <div  class="foot_two">
+            <div>
+                <h2>Quick Links</h2>
+                <ol>
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Product</li>
+                    <li><a href=""></a>Services</li>
+                    <li><a href=""></a>Shop</li>
+                    <li><a href=""></a>Contact us</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Product</h2>
+                <ol>
+                    <li>Chicken</li>
+                    <li>Mutton</li>
+                    <li>Beef</li>
+                    <li>Seafood</li>
+                    <li>Duck</li>
+                    <li>Turkey</li>
+                </ol>
+            </div>
+        </div>
+        <div  class="foot_three">
+            <div>
+                <h2>Information</h2>
+                <h3> <i class="fa-solid fa-phone-volume"></i>+91 6356767366</h3>
+                <h3><i class="fa-solid fa-square-envelope"></i>Hellodeveloper@gmail.com</h3>
+                <h3><i class="fa-solid fa-location-dot"></i> velachery ,chennai</h3>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <div>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-facebook"></i>
+
+                </div>
+               
+            </div>
+        </div>
+     </footer>
+
+    </section>
+
+    <script src="./menu.js"></script>
+</body>
+
+</html>

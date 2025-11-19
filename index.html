@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEAT</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/16a2d7a5b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- overall -->
+    <section>
+
+        <!-- navbar -->
+        <nav>
+            <div class="nav_head">
+                <img src="./assest/logo1.png" alt="">
+                <h1 class="inter">MeaT</h1>
+            </div>
+            <div class="nav_add" onclick="map()">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="pop">
+                    <h4>Address</h4>
+                    <p>velachery,vijay nagar busstop 600056</p>
+                </div>
+            </div>
+            <input type="radio" id="check">
+            <label for="check"><i class="fa-solid fa-bars"></i></label>
+            <div class="nav_menu pop">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#product">Product</a>
+                <a href="#service">Services</a>
+                <a href="#shop">Shop</a>
+                <a href="#contact">Contact us</a>
+            </div>
+            <i class="fa-solid fa-cart-plus"></i>
+
+            <i class="fa-solid fa-circle-user"></i>
+        </nav>
+
+        <!-- home page -->
+
+        <div id="home">
+            <div class="home_top">
+                <h1 class="pop" onclick="img_back()">&lt;</h1>
+                <img src="./assest/homemeat.png" alt="" class="img">
+                <img src="./assest/home_fish.jpeg" alt="" class="img">
+                <img src="https://www.shutterstock.com/image-photo/various-raw-chicken-meat-portions-600nw-1985054315.jpg"
+                    alt="" class="img">
+                <img src="./assest/home_prawn.jpeg" alt="" class="img">
+
+                <h1 class="pop" onclick="img_for()">&gt;</h1>
+            </div>
+
+            <div class="home_bottom">
+                <p class="home_p"></p>
+                <p class="home_p"></p>
+                <p class="home_p"> </p>
+                <p class="home_p"></p>
+
+            </div>
+        </div>
+
+
+        <!-- ABOUT -->
+
+        <div class="about pop" id="about">
+            <h1>About</h1>
+
+            <div class="about_up">
+                <div class="about_item" onclick="item(this)">
+                    <img src="./assest/chick (2).png" alt="">
+                    <p class="item_name">Chicken</p>
+                </div>
+                <div onclick="item(this)">
+                    <img src="./assest/goat.png" alt="" class="about_item">
+                    <p class="item_name">Goat</p>
+                </div>
+                <div onclick="item(this)">
+                    <img src="./assest/cow.png" alt="" class="about_item">
+                    <p class="item_name">Cow</p>
+                </div>
+                <div onclick="item(this)">
+                    <img src="./assest/pig.png" alt="" class="about_item">
+                    <p class="item_name">Pig</p>
+                </div>
+                <div onclick="item(this)">
+                    <img src="./assest/fish.png" alt="" class="about_item">
+                    <p class="item_name">Fish</p>
+                </div>
+            </div>
+
+            <div class="over_about_bottom">
+
+                <div class="about_bottom">
+
+                    <div class="grid grid1"> <img src="./assest/grill.jpg" alt=""></div>
+                    <div class="grid grid2"><img src="./assest/slice.jpg" alt=""></div>
+                    <div class="grid grid3"><img src="./assest/kfc.jpg" alt=""></div>
+                    <div class="grid grid4"> <img src="./assest/grave.jpg" alt=""></div>
+                    <div class="grid grid5"> <img src="./assest/fried.jpg" alt=""></div>
+
+                </div>
+
+                <div class="about_bottom">
+
+                    <div class="grid grid1"> <img
+                            src="https://www.licious.in/blog/wp-content/uploads/2021/11/shutterstock_1443436190-750x750.jpg"
+                            alt=""></div>
+                    <div class="grid grid2"><img
+                            src="https://opt.toiimg.com/recuperator/img/toi/m-63712833/63712833.jpg&width=500&resizemode=4"
+                            alt=""></div>
+                    <div class="grid grid3"><img
+                            src="https://i.ytimg.com/vi/MoSkCh82YsE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCdYVxEL9pKC8Bie2xkgwT5Ger4IQ"
+                            alt=""></div>
+                    <div class="grid grid4"> <img
+                            src="https://i0.wp.com/www.lubzonline.com/wp-content/uploads/2020/09/2E1E97E5-A1D5-4F23-9907-84CEEF120DCC-scaled.jpeg?resize=500%2C500&ssl=1"
+                            alt=""></div>
+                    <div class="grid grid5"> <img
+                            src="https://cheflolaskitchen.com/wp-content/uploads/2016/05/Asun-Spicy-Peppered-Goat-meat.jpg.webp"
+                            alt=""></div>
+
+                </div>
+                <div class="about_bottom">
+
+                    <div class="grid grid1"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIVO8E7DY4Jd1-22ZP-g-1G8WiyzwxU2KguCgJrwbv6G1k8CFkzwokB4KW5Mt0cjsWvsY&usqp=CAU"
+                            alt=""></div>
+                    <div class="grid grid2"><img
+                            src="https://i.ytimg.com/vi/iZGBER2YScw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLC2e1m_LvvPxzTp6DsFmQ6jOE8NNA"
+                            alt=""></div>
+                    <div class="grid grid3"><img
+                            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/10/Rost-beef-sirloin-with-pickled-peppercorn-sauce-44e9182.jpg?quality=90&resize=708,643"
+                            alt=""></div>
+                    <div class="grid grid4"> <img
+                            src="https://www.spiceandlife.com/wp-content/uploads/2023/02/Kerala-Beef-Fry.jpg" alt="">
+                    </div>
+                    <div class="grid grid5"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTaHHQVLGTok_-MTDHmpY6qKQVaVXWNF3KQ&s"
+                            alt=""></div>
+
+                </div>
+
+                <div class="about_bottom">
+
+                    <div class="grid grid1"> <img
+                            src="https://diethood.com/wp-content/uploads/2019/09/Roasted-Pork-Loin-5.jpg" alt=""></div>
+                    <div class="grid grid2"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSedT-LldGlnqDa2dSw83ukq59x7ad-IebFtA&s"
+                            alt=""></div>
+                    <div class="grid grid3"><img src="https://wickedfood.co.za/wp-content/uploads/2014/11/suckl-p.jpg"
+                            alt=""></div>
+                    <div class="grid grid4"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyg-GShbjk4UEhPTR7W9JvYuMQkxttFIB69w2OqgZtz6RnyQmUEXwRxwXx2jLLvOUn47A&usqp=CAU"
+                            alt=""></div>
+                    <div class="grid grid5"> <img
+                            src="https://images.immediate.co.uk/production/volatile/sites/30/2022/01/Roast-Pork-Shoulder-686b22a.jpg"
+                            alt=""></div>
+
+                </div>
+
+                <div class="about_bottom">
+
+                    <div class="grid grid1"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpWHwgm7EZVhhrVP0pcQInX4EvccKju_LbvA&s"
+                            alt=""></div>
+                    <div class="grid grid2"><img
+                            src="https://t3.ftcdn.net/jpg/03/25/35/08/360_F_325350805_D8PVU73qs1dj5TdWgm9IpuAjJ7sgHacK.jpg"
+                            alt=""></div>
+                    <div class="grid grid3"><img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY7FDMEXDkmI2jM1e6PW4e8yTrUynN5uzhXw&s"
+                            alt=""></div>
+                    <div class="grid grid4"> <img
+                            src="https://i0.wp.com/gomathirecipes.com/wp-content/uploads/2022/09/5-20.jpg?resize=500%2C500&ssl=1"
+                            alt=""></div>
+                    <div class="grid grid5"> <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDpd32Bj_9szggLERN2xK_2fWrv-8s0WXxDVCOwSka2KqkJS19WhaVGleYiZOfJdrw6I&usqp=CAU"
+                            alt=""></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- product -->
+
+        <div class="product pop" id="product">
+            <h1>Product</h1>
+            <div class="pro_all">
+                <div class="prod_left">
+                    <div>
+                         <img src="./assest/cir_beef.png" alt="" class="pro_img pro1">
+                    <img src="./assest/full.png" alt=""  class="pro2" >
+                    <img src="./assest/cir_meat.jpg" alt="" class="pro_img pro3">
+                     <img src="./assest/cir_beef.png" alt="" class="pro_img pro4">
+                    <img src="./assest/full.png" alt="" class="pro5">
+                    <img src="./assest/cir_meat.jpg" alt="" class="pro_img pro6">
+                    </div>
+                   
+                    
+
+
+                </div>
+                <div class="prod_right">
+                    <h3 id="pro_det">Chicken Meat</h3>
+                    <p>The emoji represents a  <span class="change">Chicken</span>, a common domesticated bird raised for its meat and eggs. It can
+                        be used to indicate the presence of  <span class="change">Chicken</span>, relate to farming, or even to express a person's
+                        timid or cowardly nature in a playful wa</p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- service -->
+
+        <div id="service" class="pop">
+            <h1 >Service</h1>
+            <div class="over_ser">
+            <div>
+                <img src="./assest/delivery.png" alt="">
+                <h3>Fresh Meat Delivery</h3>
+                <p>Meat Online - Order Fresh Meat Online & get delivered in just 120 Minutes. Get 100% Halal Packed <span class="change">Chicken</span></p>
+            </div>
+            <div>
+                 <img src="./assest/No-Drugs.png" alt="">
+                <h3>Hygtenic processing</h3>
+                 <p>Meat Online - Order Fresh Meat Online & get delivered in just 120 Minutes. Get 100% Halal Packed <span class="change">Chicken</span></p>
+            </div>
+            <div>
+                 <img src="./assest/knife.png" alt="">
+                <h3>Custom Cut & Pack</h3>
+                <p>Meat Online - Order Fresh Meat Online & get delivered in just 120 Minutes. Get 100% Halal Packed <span class="change">Chicken</span></p>
+            </div>
+            </div>
+           
+
+        </div>
+
+        <div id="shops" class="pop">
+            <h1>Shops</h1>
+            
+            <div class="over_shop">
+                <div class="path">
+                <h2><i class="fa-solid fa-location-dot"></i> Chennai</h2>
+                    <img src="./assest/cir_meat.jpg" alt="">
+                <h2>Velachery</h2>
+                <button>Shop</button>
+                </div>
+                <div  class="path">
+                     <h2><i class="fa-solid fa-location-dot"></i> Chennai</h2>
+                    <img src="./assest/PATH.png" alt="">
+                    <h2>Velachery</h2>
+                <button>Shop</button>
+                </div>
+                <div  class="path">
+                     <h2><i class="fa-solid fa-location-dot"></i> Chennai</h2>
+                    <img src="./assest/cir_beef.png" alt="">
+                    <h2>Velachery</h2>
+                <button class="pop">Shop</button>
+                </div>
+
+            </div>
+           <div class="last_shop">
+            <a href="menu.html" class="pop">Shop Now</a>
+            <h1 class="pop">&gt;</h1>
+            <h1 class="pop">&gt;</h1>
+            <h1 class="pop" >&gt;</h1>
+           </div>
+        </div>
+
+
+    <!-- footer -->
+     <footer class="inter">
+        <div class="foot_one"><img src="./assest/logo1.png" alt="">
+        <h1>MeaT</h1></div>
+        <div  class="foot_two">
+            <div>
+                <h2>Quick Links</h2>
+                <ol>
+                    <li><a href="#home"></a>Home</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Product</li>
+                    <li><a href=""></a>Services</li>
+                    <li><a href=""></a>Shop</li>
+                    <li><a href=""></a>Contact us</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Product</h2>
+                <ol>
+                    <li>Chicken</li>
+                    <li>Mutton</li>
+                    <li>Beef</li>
+                    <li>Seafood</li>
+                    <li>Duck</li>
+                    <li>Turkey</li>
+                </ol>
+            </div>
+        </div>
+        <div  class="foot_three">
+            <div>
+                <h2>Information</h2>
+                <h3> <i class="fa-solid fa-phone-volume"></i>+91 6356767366</h3>
+                <h3><i class="fa-solid fa-square-envelope"></i>Hellodeveloper@gmail.com</h3>
+                <h3><i class="fa-solid fa-location-dot"></i> velachery ,chennai</h3>
+            </div>
+            <div>
+                <h2>Follow us</h2>
+                <div>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                      <i class="fa-brands fa-facebook"></i>
+
+                </div>
+               
+            </div>
+        </div>
+     </footer>
+
+    </section>
+
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

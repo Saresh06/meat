@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karma:wght@300;400;500;600;700&family=Mozilla+Headline:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* overall */
+
+section{
+    min-height:100vh;
+    width:100%;
+    /* background-color: aqua; */
+}
+
+/* --- font-family-- */
+.inter{
+    font-family: "Inter", sans-serif;
+}
+
+.pop{
+     font-family: "Poppins", sans-serif;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* ---- nav_bar------- */
+nav{
+
+    min-height:100px;
+    width:100%;
+    background-image:linear-gradient(to top,#103351,#2473B7);
+    position: fixed;
+    top:0;
+    color:white;
+    padding:20px;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+       z-index: 10000;
+}
+
+.nav_head{
+    min-height:100%;
+    width:20%;
+    display: flex;
+    align-items: center;
+    gap:10px
+
+}
+.nav_head>img{
+    height:70px;
+    width:70px;
+}
+
+.nav_add{
+    min-height:100%;
+    width:20%;
+     display: flex;
+    align-items: center;
+    gap:10px
+
+
+}
+
+.nav_add>i{
+    font-size:30px
+}
+
+.nav_add>div{
+    display: flex;
+    flex-direction: column;
+    gap:5px
+
+}
+
+.nav_menu{
+     min-height:100%;
+    width:45%;
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+     align-items: center;
+}
+
+.nav_menu>a{
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    position: relative;
+    transition: all 1s;
+    padding:10px
+    
+}
+
+
+
+.nav_menu>a::before{
+    content: "";
+    height:4px;
+    position: absolute;
+    bottom:0;
+    width:0%;
+     transition: all 1s;
+    background-color: #D82323EB;
+}
+
+.nav_menu>a:hover::before{
+    width: 80%;
+}
+
+nav label,nav input{
+    display: none;
+}
+
+input:checked~div{
+    right:0
+}
+nav>a{
+    text-decoration: none;
+    color: white;
+}
+nav>a>i{
+    font-size:30px;
+
+}
+
+
+/* ================================================================================================== */
+
+/* ------ home page------- */
+
+.menu_home{
+    min-height: 100vh;
+    width:100%;
+    background: linear-gradient(to right ,rgba(255,255,255,0.4)40%,rgba(0,0,0,0.2)70%),url("./assest/homemeat.png");
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.menu_home img{
+    height:300px;
+    width:300px;
+   transform: rotatey(172deg);
+
+    /* object-fit: cover; */
+}
+.menu_home>div{
+  display: flex;
+  width:50%;
+  gap:20px;
+  flex-direction: column;
+
+}
+.menu_home a{
+    text-decoration: none;
+    width:30%;
+    padding:10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #D82323EB;
+    transition: all 1s;
+}
+
+.menu_home a:active{
+    transform: scale(0.5);
+}
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+/* ---------- Menu_ list --------------- */
+
+.menu_list{
+    min-height:100vh;
+    width:100%;
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:30px;
+    gap:15px
+}
+
+.list_meat,.list_seafood{
+    min-height:100px;
+    position: relative;
+    width:95%;
+      display: flex;
+    flex-direction: column;
+   
+    gap:20px;
+}
+
+/* .list_meat{
+    background-color: cadetblue;
+}
+
+.list_seafood{
+      background-color:burlywood
+} */
+
+
+.list_meat>div,.list_seafood>div{
+min-height:50px;
+/* background-color: #b224b7; */
+display: flex;
+position: relative;
+padding:0 30px 0px 0px;
+overflow: hidden;
+ align-items: center;
+     justify-content: space-between;
+}
+
+.list_meat>div>div{
+       min-height: 100px;
+          min-width: 250px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+ transition: transform 1s;
+ 
+    gap:15px;
+        border: 3px solid transparent;
+}
+.list_seafood>div>div{
+      min-height: 100px;
+          min-width: 250px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+ transition: transform 1s;
+ 
+    gap:15px;
+        border: 3px solid transparent;
+}
+
+
+.list_meat>div h1:active,.list_seafood>div h1:active{ 
+    transform: scale(0.5);
+}
+.menu_list img{
+    height:130px;
+    width:130px;
+    
+    padding:7px;
+    /* transition: all 1s ; */
+}
+
+.mt_left{
+    position: absolute;
+    top:50%;
+     font-size: 50px;
+    cursor:grabbing;
+    transform:1s all;
+ color:#103351;
+    z-index: 2;
+}
+
+.mt_right{
+    position: absolute;
+    top:50%;
+    right:0;
+    color:#103351;
+    z-index: 2;
+     font-size: 50px;
+    cursor:grabbing;
+    transform:1s all;
+}
+.mt_right:active{
+    transform: scale(0.8);
+}
+.mt_left:active{
+    transform: scale(0.8);
+}
+.menu_list img:hover{
+    border:3px solid #2473B7;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.meat_container, .sea_container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 20px;
+}
+
+.chick_menu{
+min-height:100vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-around;
+    padding:20px;
+    /* background-color: #84b724; */
+    gap:30px 10px;
+}
+
+.chick_inside{
+    min-height:350px;
+    width:350PX;
+    display: flex;
+    padding:15px;
+    position: relative;
+    align-items: center;
+    gap:15px;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    
+    clip-path:path("M 0,0 L 350,0 L 350,300 L 175,350 L 0,300   Z");
+    background-color:  white;
+    border: 2px solid black;
+} 
+
+
+.chick_inside img{
+    height:100px;
+    width:150px;
+
+}
+
+.chick_inside button{
+    width:60%;
+    font-size: 20px;
+    background-color: #ECE673;
+    border:none;
+    border-radius: 15px;
+    padding:5px
+
+}
+
+
+.chick_inside  h3{
+    width:40%;
+    padding:10px;
+    font-size:20px;
+    background-color: #7FEC73;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chick_inside i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:25px;
+    width:25px;
+    background-color: black;
+    border-radius: 50%;
+    color:#7FEC73
+}
+
+.chick_inside i:active{
+    transform: scale(0.8);
+}
+
+.lfbor_div{
+    position: absolute;
+    height:2px;
+    bottom: 23px;
+    left:-5px;
+    width:52%;
+    transform: rotate(16deg);
+    background-color: black;
+}
+
+
+.rgbor_div{
+    position: absolute;
+    height:2px;
+    bottom: 23px;
+    right:-5px;
+    width:52%;
+    transform: rotate(164deg);
+    background-color: black;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* ============  Footer================= */
+
+footer{
+    min-height:80vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#2F4866C7 ;
+    gap:20px;
+    color:white
+}
+footer>div{
+    min-height:200px;
+    /* background-color: red; */
+}
+
+.foot_one{
+     display: flex;
+      width:20%;
+ align-items: center;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+}
+.foot_one>img{
+    height:160px;
+
+    width:160px
+}
+
+.foot_two{
+    width:30%;
+     display: flex;
+      align-items: center;
+  
+    justify-content: space-around;
+     
+}
+
+.foot_two>div{
+      display: flex;
+       flex-direction: column;
+       gap:10px
+}
+
+footer li{
+    font-size: 18px;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+
+.foot_three{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap:18px;
+   
+    width:30%
+}
+
+.foot_three>div:first-child{
+         display: flex;
+    gap:12px;
+    flex-direction: column;
+}
+
+.foot_three h3>i{
+    margin-right: 13px;
+    font-size: 25px;
+}
+
+.foot_three>div:last-child{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+}
+
+.foot_three>div:last-child>div{
+      display: flex;
+      font-size: 25px;
+      gap:15px
+
+}
+footer h2{
+    color:black
+}
