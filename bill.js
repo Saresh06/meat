@@ -40,10 +40,18 @@ function loadCart() {
 function updateQty(i, change) {
     cart[i].quantity += change;
 
-    if (cart[i].quantity < 1) cart[i].quantity = 1;
+    if (cart[i].quantity < 1) {
+        cart[i].quantity = 1;
+    }
 
     localStorage.setItem("cart", JSON.stringify(cart));
     loadCart();
 }
 
 loadCart();
+
+
+if (cart.length>0){
+ document.getElementsByClassName("order-btn")[0].innerHTML=`<div class="place"><a href="">Place Order</a></div>`
+
+}
