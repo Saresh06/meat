@@ -35,6 +35,8 @@ function loadCart() {
     });
 
     grandTotalEle.innerText = "Total: ₹" + grandTotal;
+    
+    localStorage.setItem("billAmount", grandTotal);
 }
 
 function updateQty(i, change) {
@@ -51,7 +53,8 @@ function updateQty(i, change) {
 loadCart();
 
 
+
 if (cart.length>0){
- document.getElementsByClassName("order-btn")[0].innerHTML=`<div class="place"><a href="">Place Order</a></div>`
+ document.getElementsByClassName("order-btn")[0].innerHTML=`<div class="place"><a href="payment.html">Place Order</a></div>`
 
 }

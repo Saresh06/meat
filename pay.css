@@ -132,9 +132,10 @@ nav>i{
     margin-top: 120px;
     width:85%;
     min-height:50px;
-    background-color: #103351;
+    
     display: flex;
     flex-direction: column;
+    padding:40px 0px;
     gap:30px
 
 }
@@ -157,7 +158,7 @@ nav>i{
 }
 
 .online{
-    background-color: red;
+ 
     display: flex;
     flex-direction: column;
     gap:30px
@@ -189,17 +190,22 @@ nav>i{
 }
 .online img{
     display: none;
-    height:30px;
-    width:100px;
+    height:50px;
+    width:70px;
+    padding:10px;
+   
    
 }
 
 .online img:nth-child(even){
-    height:30px;
+    height:50px;
     object-fit: cover;
-    width:150px
+    width:150px;
+    
 }
-
+.online img:hover{
+    border:2px  solid #2473B7
+}
 .online i{
     font-size: 20px;
     transform: rotate(270deg);
@@ -224,4 +230,85 @@ nav>i{
     100%{
         transform: rotate(270deg);
     }
+}
+
+
+button{
+    padding:10px;
+    width:25%;
+    font-size: 23px;
+    color:white;
+    border-radius: 10px;
+    border:none;
+    background-color: #AEB724EB;
+    transition: all 2s;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:active{
+    transform: scale(0.8);
+}
+
+form{
+    min-height: 10px;
+    width:35%;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    background-color:#AEB724EB ;
+    position: absolute;
+    gap:15px;
+    top:-120%;
+    border-radius: 15px;
+    align-items: center;
+}
+
+form>h1{
+    width:100%
+}
+form div{
+    display:flex;
+    flex-direction: column;
+    font-size: 20px;
+    gap:10px;
+    width:100%
+    
+}
+
+form div>input{
+    padding:10px;
+    width:100%;
+    border-radius: 5px;
+   outline: none;
+
+    border: none;
+}
+
+form div>input:focus{
+     outline:2px solid #103351;
+}
+
+form>input{
+    width: 50%;
+    padding:10px;
+    border-radius: 10px;
+    border: none;
+    color:white;
+    font-size: 20px;
+    background-color: #2473B7;
+    transition: all 1s;
+
+}
+
+form>input:active{
+    transform: scale(0.8);
+}
+
+#continueBtn:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
+}
+
+.selected_img{
+    border:2px  solid #2473B7
 }
